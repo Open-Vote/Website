@@ -116,3 +116,8 @@ body, html
 	color: #9A9A9A;
 	text-decoration: none;
 }
+
+#countdown
+{
+	font-size: 18pt;
+}
