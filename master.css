@@ -1,0 +1,118 @@
+body, html
+{
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+/* The share ribbon */
+
+#ribbon
+{
+	z-index: 6;
+	position: absolute;
+	top: 0px;
+	right: 250px;
+}
+/* End of share ribbon*/
+
+#page
+{
+	width: 80%;
+	background-color: #F6F6F6;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* Start of header styling */
+
+#header
+{
+	background-color: #F6F6F6;
+	position: relative;
+	top: 0px;
+	overflow: hidden;
+}
+#heading
+{
+	text-align: center;
+	font-family:"Times New Roman", Times, serif;
+	font-size: 18pt;
+}
+#header img
+{
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+#tut_vid
+{	
+	position: relative;
+	left: 0;
+	right: 0;
+	margin-bottom: 50px;
+}
+#tut_vid p
+{
+	display: inline;
+}
+#tut_vid iframe
+{
+	border: 5px solid #FFFFFF;
+	box-shadow: 0px 0px 40px 0px #000000;
+}
+
+/* End of header styling */
+
+/* Start of page styling */
+
+#content
+{
+	width: 60%;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: inline-block;
+	font-family:"Times New Roman", Times, serif;
+	background-color: #FFFFFF;
+}
+#sidebar
+{
+	
+}
+#text p
+{
+	text-indent: 30px;
+	font-size: 16pt;
+}
+#text
+{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+/*End of page styling */
+
+/* Start of footer styling */
+
+#footer
+{
+	height: 100px;
+	text-align: center;
+	background-image:url('images/footerblank.png');
+	position: relative;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+#footer h2
+{
+	margin:0px;
+	padding:0px;
+}
+#footer a
+{
+	font-family:"Times New Roman", Times, serif;
+	color: #9A9A9A;
+	text-decoration: none;
+}
