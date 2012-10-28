@@ -21,19 +21,16 @@
     		<div align="center" id="tut_vid">
     			<iframe width="560" height="315" src="https://www.youtube.com/embed/McmncAo3dDQ?rel=0" frameborder="0" allowfullscreen></iframe>
     			<br><br>
-    			<?php
-    			$lauch = mktime (0, 1, 0, 11, 5, 2012);
-				$today = time ();
-				
-				$diff=($lauch-$today);
-
-				$seconds =(int) ($difference/1000);
-
-				echo '$diff';
-				print "balls";
-    			?>
-    			
+    			<p id="countdown"><span id="days"></span> Days <span id="hours"></span> Hours <span id="min"></span> Minutes <span id="sec"></span> Seconds</p>
     		</div>
+    		</div>
+    		<div id="sidebar">
+    				<div id="connect">
+    					
+    				</div>
+    				<div id="donate">
+    					
+    				</div>
     		</div>
     		<div id="content">
     			<div id="text">
@@ -41,11 +38,13 @@
     				<p>In Honor of the some 20 Million Voters that Fought for Freedom during the 24-Hour Internet Blackout on January 18th, 2012, Codifiable as 480 Million Vote Hours, All Future Votes shall Likewise be Measured in Vote Hours.</p><br>
     				<p>Every Open Voter gets 1 Vote for every hour of their life that they can use for what matters most to them. Open Voters can propose their ideas for others to review, support and adjust. Upon Ratification, Open Votes Shall Forever be Protected by all People, for all people, as that Sovereignty is and of Right Ought to be Free.</p><br>
     				<p>Universal Ratification of the Codification of the Open Vote Scheduled for Novemeber 5th through Novemeber 7th, 2012.</p>
-    			</div>
+    			</div>	
     		</div>
     		<div id="footer">
     			<a href="index.html"><h2>WWW.OPENVOTE.ME</h2></a>
     			<a href="#">Developers</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
+    			<br>
+    			<br>
 			</div>
        	</div>
      	
