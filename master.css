@@ -1,4 +1,11 @@
-body, html
+html 
+{
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    height: 100%;
+}
+body
 {
 	background-color: #FFFFFF;
 	margin: 0px;
@@ -13,11 +20,29 @@ body, html
 	top: 0px;
 	right: 250px;
 }
+#fb
+{
+	position: relative;
+	top: -130px;
+	right: 46px;
+}
+#tw
+{
+	position: relative;
+	top: -87px;
+	right: 82px;
+}
+#gg
+{
+	position: relative;
+	top: -45px;
+	right: 117px;
+}
 /* End of share ribbon*/
 
 #page
 {
-	width: 80%;
+	width: 70%;
 	background-color: #F6F6F6;
 	margin: 0 auto;
 	overflow: hidden;
@@ -72,16 +97,47 @@ body, html
 	bottom: 0px;
 	left: 0px;
 	display: inline-block;
+	font-size: 18pt;
 	font-family:"Times New Roman", Times, serif;
 	background-color: #FFFFFF;
 }
 #sidebar
 {
+	position: relative;
 	width: 30%;
-	background-color: red;
+	background-color: #F6F6F6;
 	float: right;
 	display: inline-block;
 }
+#connect
+{
+	border: 4px solid #778899;
+	background-color: #FFFFFF;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+}
+#connect a
+{
+	font-family: "Times New Roman", Times, serif;
+	color: #9A9A9A;
+	text-decoration: none;
+	text-align: "justify";
+	position: relative;
+	left: 32px;
+	bottom: 10px;
+}
+#donate
+{
+	border: 4px solid #778899;
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
 #text p
 {
 	text-indent: 30px;
@@ -99,7 +155,7 @@ body, html
 
 #footer
 {
-	height: 100px;
+	height: 150px;
 	text-align: center;
 	background-image:url('images/footerblank.png');
 	position: relative;
@@ -110,12 +166,13 @@ body, html
 }
 #footer h2
 {
+	letter-spacing: 4px;
+	padding-top: 10px;
 	margin:0px;
-	padding:0px;
 }
 #footer a
 {
-	font-family:"Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 	color: #9A9A9A;
 	text-decoration: none;
 }
