@@ -195,13 +195,16 @@ body
 	color: #9A9A9A;
 	text-decoration: none;
 }
-#countdown
+div#countdown
 {
-	margin:0px;
+	display: block;
+	margin: 0px;
 	font-size: 22pt;
+	margin-top: 22px;
 }
 #days, #hours, #min, #sec
 {
 	font-size: 26pt;
+	margin-left: 9px;
 	color: red;
 }
