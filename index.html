@@ -7,27 +7,27 @@
         <link rel="stylesheet" type="text/css" href="master.css">
         <script src="scripts/countdown.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-   		<script type="text/javascript" src="jquery.modalbox-1.4.1-min.js"></script>
-		<script type="text/javascript">
-			  $(function() {
-
-				$('#link_policy').click(function(event) {
-    			var mytext = $('#policy').val();
-
-
-    			$('<div id="dialog">'+mytext+'</div>').appendTo('body');    	
-				event.preventDefault();
-
-				$("#dialog").dialog({					
-					width: 600,
-					modal: true,
-					close: function(event, ui) {
-						$("#dialog").hide();
-						}
-			 		});
-   				}); //close click
-			});
-		</script> 
+	<script type="text/javascript" src="jquery.modalbox-1.4.1-min.js"></script>
+	<script type="text/javascript">
+            $(function() {
+            
+                $('#link_policy').click(function(event) {
+                    var mytext = $('#policy').val();
+                    
+                    $('<div id="dialog">'+mytext+'</div>').appendTo('body');
+                       	
+                    event.preventDefault();
+                    
+                    $("#dialog").dialog({					
+                        width: 600,
+                        modal: true,
+                        close: function(event, ui) {
+                            $("#dialog").hide();
+                        }
+                    });
+                }); //close click
+            });
+	</script> 
         <title>OpenVote</title>
     </head>
     <body>
@@ -39,45 +39,44 @@
     	</div>
     	<div id="page">
     		<div id="header">
-    		<div id="heading">
-    			<h1>OPEN VOTE</h1>
-    		</div>
-    		<img src="images/logo.png" alt="OpenVote Logo">
-    		<div align="center" id="tut_vid">
-    			<iframe width="560" height="315" src="https://www.youtube.com/embed/McmncAo3dDQ?rel=0" frameborder="0" allowfullscreen></iframe>
-    			<br><br>
-    			<p id="countdown"><span id="days"></span> Days <span id="hours"></span> Hours <span id="min"></span> Minutes <span id="sec"></span> Seconds</p>
-    		</div>
+			<div id="heading">
+				<h1>OPEN VOTE</h1>
+			</div>
+			<img src="images/logo.png" alt="OpenVote Logo">
+			<div align="center" id="tut_vid">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/McmncAo3dDQ?rel=0" frameborder="0" allowfullscreen></iframe>
+				<div id="countdown"><span id="days">...</span> Days <span id="hours">...</span> Hours <span id="min">...</span> Minutes <span id="sec">...</span> Seconds</div>
+			</div>
     		</div>
     		<div id="sidebar">
     				<div id="connect">
     					<h2 align="center">GET CONNECTED</h2>
-    					<a href="http://www.facebook.com/pages/Open-Vote/511264915559415" target="_blank"><img src="images/facebook.png" alt="Facebook Page">   Join the Conversation</a><br>
-    					<a href="https://plus.google.com/u/0/b/102249465231259889598/102249465231259889598/" target="_blank"><img src="images/google.png" alt="Google+">   Hangout on Google</a><br>
-    					<a href="http://www.reddit.com/r/OpenVote/" target="_blank"><img src="images/reddit.png" alt="Reddit">   Discuss on Reddit</a><br>
-    					<a href="https://twitter.com/Open_Vote" target="_blank"><img src="images/twitter.png" alt="Twitter">   Follow on Twitter</a><br>
-    					<a href="http://www.linkedin.com/groups/OpenVote-4690414?home=&gid=4690414" target="_blank"><img src="images/linkdin.png" alt="Linkdin">   Meet the Network</a><br>
-    					<a href="https://github.com/Open-Vote" target="_blank"><img src="images/github.png" alt="GitHub">   Contribute on Github</a><br>
+    					<a href="http://www.facebook.com/pages/Open-Vote/511264915559415" target="_blank"><img src="images/facebook.png" alt="Facebook Page"><span class="description">Join the Conversation</span></a>
+    					<a href="https://plus.google.com/u/0/b/102249465231259889598/102249465231259889598/" target="_blank"><img src="images/google.png" alt="Google+"><span class="description">Hangout on Google</span></a>
+    					<a href="http://www.reddit.com/r/OpenVote/" target="_blank"><img src="images/reddit.png" alt="Reddit"><span class="description">Discuss on Reddit</span></a>
+    					<a href="https://twitter.com/Open_Vote" target="_blank"><img src="images/twitter.png" alt="Twitter"><span class="description">Follow on Twitter</span></a>
+    					<a href="http://www.linkedin.com/groups/OpenVote-4690414?home=&gid=4690414" target="_blank"><img src="images/linkdin.png" alt="Linkdin"><span class="description">Meet the Network</span></a>
+    					<a href="https://github.com/Open-Vote" target="_blank"><img src="images/github.png" alt="GitHub"><span class="description">Contribute on Github</span></a>
     					<p align="center"><img src="images/github_socialcoding.png" width="115px" height="65"></p>
     				</div>
     				<div align="center" id="donate">
+					<h2>KICKSTART OPENVOTE 2012</h2>
     					<a class="wepay-widget-button wepay-green" id="wepay_widget_anchor_508edea6e7ea8" href="https://www.wepay.com/donations/2141290720">Donate</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 2141290720,widget_type: "donation_campaign",anchor_id: "wepay_widget_anchor_508edea6e7ea8",widget_options: {donor_chooses: true,allow_cover_fee: true,enable_recurring: true,allow_anonymous: true,button_text: "Donate"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
-    					<h3>KickStart OpenVote 2012</h3>
     				</div>
     		</div>
     		<div id="content">
     			<div id="text">
     				<h1>Building an Open Future One Vote-Hour at a Time</h1>
-    				<p>In Honor of the some 20 Million Voters that Fought for Freedom during the 24-Hour Internet Blackout on January 18th, 2012, Codifiable as 480 Million Vote Hours, All Future Votes shall Likewise be Measured in Vote Hours.</p>
-    				<p>Every Open Voter gets 1 Vote for every hour of their life that they can use for what matters most to them. Open Voters can propose their ideas for others to review, support and adjust. Upon Ratification, Open Votes Shall Forever be Protected by all People, for all people, as that Sovereignty is and of Right Ought to be Free.</p>
-    				<p>Universal Ratification of the Codification of the Open Vote Scheduled for Novemeber 5th through Novemeber 7th, 2012.</p>
+    				<p>In honor of the some 20 million Voters that fought for freedom during the 24-hour internet blackout on January 18th, 2012, codifiable as 480 million Vote Hours, all future Votes shall likewise be measured in Vote Hours.</p>
+    				<p>Every Open Voter gets 1 Vote for every hour of their life that they can use for what matters most to them. Open Voters can propose their ideas for others to review, support and adjust. Upon ratification, Open Votes shall forever be protected by all people, for all people, as that sovereignty is and of right ought to be free.</p>
+    				<p>Universal ratification of the Codification of the Open Vote scheduled for November 5th through November 7th, 2012.</p>
     			</div>	
     		</div>
+    		<div class="clear"></div>
     		<div id="footer">
     			<a href="index.html"><h2>WWW.OPENVOTE.ME</h2></a>
     			<a href="mailto:developers@openvote.me?Subject=Developer%20Contact">Developers</a> | <a href="#">Privacy Policy</a> | <a href="mailto:contact@openvote.me?Subject=Site%20Contact">Contact</a>
-			</div>
+		</div>
        	</div>
-     	
     </body>
 </html>
