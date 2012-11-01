@@ -136,6 +136,11 @@ body
 	margin-bottom: 5px;
 }
 
+#connect a:hover
+{
+	color: #3B3B3B;
+}
+
 #connect a img
 {
 	vertical-align: middle;
@@ -179,6 +184,7 @@ body
 #text h1
 {
 	margin: 7px 0px;
+	color: black;
 }
 
 /*End of page styling */
