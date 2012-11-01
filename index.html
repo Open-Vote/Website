@@ -7,27 +7,27 @@
         <link rel="stylesheet" type="text/css" href="master.css">
         <script src="scripts/countdown.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-   		<script type="text/javascript" src="jquery.modalbox-1.4.1-min.js"></script>
-		<script type="text/javascript">
-			  $(function() {
-
-				$('#link_policy').click(function(event) {
-    			var mytext = $('#policy').val();
-
-
-    			$('<div id="dialog">'+mytext+'</div>').appendTo('body');    	
-				event.preventDefault();
-
-				$("#dialog").dialog({					
-					width: 600,
-					modal: true,
-					close: function(event, ui) {
-						$("#dialog").hide();
-						}
-			 		});
-   				}); //close click
-			});
-		</script> 
+	<script type="text/javascript" src="jquery.modalbox-1.4.1-min.js"></script>
+	<script type="text/javascript">
+            $(function() {
+            
+                $('#link_policy').click(function(event) {
+                    var mytext = $('#policy').val();
+            
+            
+                    $('<div id="dialog">'+mytext+'</div>').appendTo('body');    	
+                    event.preventDefault();
+            
+                    $("#dialog").dialog({					
+                        width: 600,
+                        modal: true,
+                        close: function(event, ui) {
+                            $("#dialog").hide();
+                        }
+                    });
+                }); //close click
+            });
+	</script> 
         <title>OpenVote</title>
     </head>
     <body>
