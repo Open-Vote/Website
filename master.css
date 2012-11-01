@@ -161,11 +161,18 @@ body
 {
 	text-indent: 30px;
 	font-size: 16pt;
+	margin: 10px 0px;
 }
 #text
 {
 	margin-left: 25px;
 	margin-right: 25px;
+	color: #252525;
+}
+
+#text h1
+{
+	margin: 7px 0px;
 }
 
 /*End of page styling */
